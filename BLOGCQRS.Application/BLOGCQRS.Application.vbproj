@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>BLOGCQRS.Application</RootNamespace>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\AccountInfos\Commands\CreateAccountInfos\" />
+    <Folder Include="Features\AccountInfos\Queries\GetAllAccountInfos\" />
+    <Folder Include="Features\AccountInfos\Queries\GetByIdAccountInfos\" />
+    <Folder Include="Features\Posts\Commands\CreatePost\" />
+    <Folder Include="Features\Posts\Queries\GetAllPost\" />
+    <Folder Include="Features\Posts\Queries\GetByIdPost\" />
+    <Folder Include="Features\Users\Queries\GetAllUser\" />
+    <Folder Include="Features\Users\Queries\GetByIdUser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLOGCQRS.Domain\BLOGCQRS.Domain.vbproj" />
+    <ProjectReference Include="..\BLOGCQRS.Persistence\BLOGCQRS.Persistence.vbproj" />
+  </ItemGroup>
+
+</Project>
