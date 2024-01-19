@@ -19,7 +19,6 @@ Public Class CreateUserHandler
         .Auth = request.Auth,
         .CreatedBy = "ADMIN",
         .CreatedDate = DateTime.Now,
-        .Id = 0,
         .IsDelete = 0,
         .LoginInfos = Nothing,
         .ModifiedBy = Nothing,
