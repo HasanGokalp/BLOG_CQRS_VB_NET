@@ -19,13 +19,7 @@ Public Class CreateUserHandler
         .Auth = request.Auth,
         .CreatedBy = "ADMIN",
         .CreatedDate = DateTime.Now,
-        .IsDelete = 0,
-        .LoginInfos = Nothing,
-        .ModifiedBy = Nothing,
-        .ModifiedDate = Nothing,
-        .Name = request.Name,
-        .Posts = Nothing
-        })
+        .Name = request.Name})
 
         Await _unit.SaveAsync
 
