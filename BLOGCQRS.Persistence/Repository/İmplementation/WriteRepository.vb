@@ -11,14 +11,14 @@
     End Sub
 
     Public Sub Update(entity As T) Implements IWriteRepository(Of T).Update
-        Throw New NotImplementedException()
+        _ctx.Set(Of T).Update(entity)
     End Sub
 
     Public Sub Delete(entity As T) Implements IWriteRepository(Of T).Delete
-        Throw New NotImplementedException()
+        _ctx.Set(Of T).Remove(entity)
     End Sub
 
     Public Sub Delete(id As Object) Implements IWriteRepository(Of T).Delete
-        Throw New NotImplementedException()
+        _ctx.Set(Of T).Remove(id)
     End Sub
 End Class
