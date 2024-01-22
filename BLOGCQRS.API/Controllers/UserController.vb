@@ -18,4 +18,9 @@ Public Class UserController
         Return Ok(result)
     End Function
 
+    <HttpPost("Get_GetAllUser")>
+    Public Async Function GetAllUser() As Task(Of IActionResult)
+        Return Ok(Await _mediator.Send(New GetAllUserRequest))
+    End Function
+
 End Class

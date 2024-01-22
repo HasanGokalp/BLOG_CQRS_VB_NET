@@ -6,7 +6,7 @@ Imports MediatR
 Public Class CreateUserHandler
     Implements IRequestHandler(Of CreateUserRequest, CreateUserResponse)
 
-    Public Property _unit As IUnitWork
+    Private Property _unit As IUnitWork
     Public Sub New(unit As IUnitWork)
         _unit = unit
     End Sub

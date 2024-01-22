@@ -16,7 +16,6 @@
     <Folder Include="Features\Posts\Commands\CreatePost\" />
     <Folder Include="Features\Posts\Queries\GetAllPost\" />
     <Folder Include="Features\Posts\Queries\GetByIdPost\" />
-    <Folder Include="Features\Users\Queries\GetAllUser\" />
     <Folder Include="Features\Users\Queries\GetByIdUser\" />
   </ItemGroup>
 

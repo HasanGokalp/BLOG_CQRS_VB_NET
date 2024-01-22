@@ -24,6 +24,8 @@ Module Program
         '    ' Assuming GetAllCarHandler is in a namespace that needs to be imported
         builder.Services.AddMediatR(Function(cfg) cfg.RegisterServicesFromAssembly(GetType(CreateUserHandler).Assembly))
 
+        builder.Services.AddMediatR(Function(cfg) cfg.RegisterServicesFromAssembly(GetType(GetAllUserHandler).Assembly))
+
 
         'builder.Services.AddScoped(GetType(ReadRepository))
 
