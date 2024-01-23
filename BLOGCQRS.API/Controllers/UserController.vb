@@ -33,4 +33,9 @@ Public Class UserController
         Return Ok(Await _mediator.Send(request))
     End Function
 
+    <HttpPost("Post_DeleteUser")>
+    Public Async Function DeleteUser(request As DeleteUserRequest) As Task(Of IActionResult)
+        Return Ok(Await _mediator.Send(request))
+    End Function
+
 End Class
