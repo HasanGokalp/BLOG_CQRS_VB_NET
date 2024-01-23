@@ -2,7 +2,6 @@
 Imports BLOGCQRS.Domain
 Imports BLOGCQRS.Persistence
 Imports MediatR
-Imports Microsoft.EntityFrameworkCore.Metadata.Internal
 
 Public Class GetByIdUserHandler
     Implements IRequestHandler(Of GetByIdUserRequest, GetByIdUserResponse)

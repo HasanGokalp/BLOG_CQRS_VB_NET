@@ -28,4 +28,9 @@ Public Class UserController
         Return Ok(Await _mediator.Send(request))
     End Function
 
+    <HttpPost("Post_UpdateUser")>
+    Public Async Function UpdateUser(request As UpdateUserRequest) As Task(Of IActionResult)
+        Return Ok(Await _mediator.Send(request))
+    End Function
+
 End Class

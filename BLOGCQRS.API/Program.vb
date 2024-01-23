@@ -15,16 +15,22 @@ Module Program
         builder.Services.AddEndpointsApiExplorer()
         builder.Services.AddSwaggerGen()
 
+        'builder.Services.AddHttpContextAccessor()
+
         builder.Services.AddScoped(GetType(IUnitWork), GetType(UnitWork))
 
         builder.Services.AddScoped(GetType(IWriteRepository(Of)), GetType(WriteRepository(Of)))
 
         builder.Services.AddDbContext(Of VBCQRSContext)
 
+        ''Mediator
         '    ' Assuming GetAllCarHandler is in a namespace that needs to be imported
         builder.Services.AddMediatR(Function(cfg) cfg.RegisterServicesFromAssembly(GetType(CreateUserHandler).Assembly))
 
         builder.Services.AddMediatR(Function(cfg) cfg.RegisterServicesFromAssembly(GetType(GetAllUserHandler).Assembly))
+
+        builder.Services.AddMediatR(Function(cfg) cfg.RegisterServicesFromAssembly(GetType(UpdateUserRequest).Assembly))
+
 
 
         'builder.Services.AddScoped(GetType(ReadRepository))
