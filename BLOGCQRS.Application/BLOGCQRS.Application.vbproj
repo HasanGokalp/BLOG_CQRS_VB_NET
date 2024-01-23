@@ -13,7 +13,7 @@
     <Folder Include="Features\AccountInfos\Commands\CreateAccountInfos\" />
     <Folder Include="Features\AccountInfos\Queries\GetAllAccountInfos\" />
     <Folder Include="Features\AccountInfos\Queries\GetByIdAccountInfos\" />
-    <Folder Include="Features\Posts\Queries\GetAllPost\" />
+    <Folder Include="Features\Posts\Commands\UpdatePost\" />
     <Folder Include="Features\Posts\Queries\GetByIdPost\" />
   </ItemGroup>
 

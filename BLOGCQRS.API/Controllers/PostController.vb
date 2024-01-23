@@ -18,4 +18,9 @@ Public Class PostController
         Return Ok(Await _mediator.Send(request))
     End Function
 
+    <HttpPost("Get_GetAllPost")>
+    Public Async Function GetAllPost() As Task(Of IActionResult)
+        Return Ok(Await _mediator.Send(New GetAllPostRequest))
+    End Function
+
 End Class
